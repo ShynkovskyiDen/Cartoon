@@ -1,0 +1,163 @@
+.wrapper {
+    background: url(../img/background.jpg) center no-repeat;
+    position: relative;
+    width: 100%;
+}
+.sun__item {
+    width: 175px;
+    height: 175px;
+    border: 2px solid rgb(255, 115, 0);
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    right: 620px;
+    z-index: 666;
+    animation: animationSun 6s linear infinite;
+    animation-delay: 4s;
+    animation-duration: 10s;
+
+}
+.smile__item {
+    position: absolute;
+    width: 56%;
+    bottom: 36px;
+    left: 55px;
+    z-index: 888;
+}
+.eyes__item {
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    top: 45px;
+    left: 41px;
+    z-index: 888;
+}
+.eyes__item--add {
+    top: 45px;
+    right: 41px;
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    z-index: 888;
+}
+.eye__point {
+    position: absolute;
+    top: 29px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 888;
+}
+.hand__item {
+    position: absolute;
+    width: 10%;
+    z-index: 666;
+    top: 70px;
+    left: 640px;
+    animation: animationHand 6s linear infinite;
+    animation-delay: 4s; 
+    animation-duration: 10s;
+}
+.playground__img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 777;
+    width: 60%;
+}
+.player__img {
+    position: absolute;
+    width: 33%;
+    z-index: 999;
+    left: 20px;
+    top: 220px;
+    animation: animationPlayer 9s linear infinite;
+    animation-delay: 1s;
+    animation-duration: 10s;
+}
+.ball__img {
+    position: absolute;
+    z-index: 999;
+    width: 5%;
+    top: 200px;
+    left: 260px;
+    animation: animationBall 9s linear infinite;
+    animation-delay: 1s;
+    animation-duration: 10s;
+}
+@keyframes animationBall {
+    0%, 100% {
+        width: 5%;
+        top: 200px;
+        left: 260px;
+    }
+    20% {
+        top: 65px;
+        left: 380px;
+        transform: rotate(720deg) scale(1.5);
+    }
+    40% {
+        transform: rotate(720deg) scale(2);
+        top: 20px;
+        left: 500px;
+    }
+    60% {
+        transform: rotate(720deg) scale(1.6);
+        top: 70px;
+        left: 600px;
+    }
+    80% {
+        transform: rotate(720deg) scale(1.1);
+        width: 5%;
+        top: 110px;
+        left: 690px;
+    }
+}
+@keyframes animationSun {
+    0%, 100% {
+    top: 30px;
+    right: 620px;
+    }
+    50% {
+        transform: rotateZ(40deg);
+        top: 40px;
+        right: 505px;
+    }
+}
+@keyframes animationHand {
+    0%, 100% {
+        top: 30px;
+        right: 620px;
+    }
+    25% {
+        top: 95px;
+        left: 500px;
+    }
+    50% {
+        z-index: 888;
+        top: 90px;
+        left: 655px;
+        transform: rotateY(180deg) skewY(30deg);
+    }
+    75% {
+        top: 95px;
+        left: 500px;
+    }
+}
+@keyframes animationPlayer{
+    0%, 100% {
+        transform:translate(0, 0);
+    }
+    50% {
+        transform:translate(40px, -90px);
+    }
+}
