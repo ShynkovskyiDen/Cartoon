@@ -29,6 +29,7 @@ html {
 body {
     font-size: 1rem;
 	line-height: 1;
+    background-color: rgb(205, 205, 205);
 }
 ol, ul {
 	list-style: none;
@@ -79,21 +80,28 @@ table {
     width: 20%;
     text-align: center;
 }
+.nav__item:hover {
+    border-radius: 30px;
+    background-color: rgb(205, 205, 205);
+}
 .nav__link {
     display: inline-block;
     padding: 10px 0;
     font-size: 1.4rem;
     font-weight: 600;
-    color: beige;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    width: 100%;
 }
 .nav__link:hover {
     text-decoration: underline;
+    color: #000;
 }
 .main {
-    align-items: flex-start;
-    margin: 90px 0;
-    width: 100%;
+    margin: 70px 0;
+    padding: 20px 0;
+    width: 80%;
+    background-color: white;
 }
 .block__heading {
     font-size: 2rem;
@@ -101,17 +109,13 @@ table {
     text-transform: uppercase;
     margin: 0 auto;
     width: 70%;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 #video {
+    border-radius: 2%;
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
     height: 600px;
-}
-.footer {
-    width: 100%;
-    background-color: rgb(192, 192, 192);
-    padding: 20px 0;
 }
 #map {
     margin: 0 auto;
